@@ -1,2 +1,11 @@
-# github-proxy
-用作代理GitHub仓库中的文件，之所以不直接使用Nginx达成此目的是因为通过GitHub的RAW模式读取的文件的Content-Type都是“text/plain; charset=utf-8”
+# Wordpress Release Mirrors
+从WordPress的官方GitHub仓库镜像其所有正式发行版
+
+## 使用
+资源调用格式：
+
+`domain.com?path=/WordPress@{版本号}/{资源相对路径}`
+
+e.g：
+
+`http://domain.org?path=/WordPress@5.5.1/wp-includes/js/codemirror/codemirror.min.js?ver=5.5`
